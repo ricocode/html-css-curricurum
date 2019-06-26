@@ -1,0 +1,146 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  width: 100%;
+  font-family: Hiragino Sans,sans-serif;
+}
+
+.main-header {
+  padding-bottom: 15%;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+}
+
+/* ここから */
+.header {
+  position: relative;
+  height: 40px;
+  background-color: #000b00;
+  vertical-align: middle;
+}
+
+header ul {
+    margin: 0px; 
+    padding: 0px; 
+}
+
+.left {
+  float: left;
+  margin: 7px 15px 0px 15px;
+  padding-left: 20px;
+}
+
+.right{
+  float: right;
+  margin: 7px 15px 0px 15px;
+  padding-right: 20px;
+}
+
+header ul a {
+  color: #DCDCDC;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+header li {
+ list-style: none;
+}
+
+header ul:after {
+}
+
+.clerafix {
+  content: "";
+  display: block;
+  clear: both;    
+} 
+
+
+/* ここまでがheader部分の実装 */
+
+.main-header img {
+ position: absolute;
+ margin-top: 150px;
+ left: 50%;
+ width: 18%;
+ transform: translate(-50%,-50%) ;
+/* main画像（白い「Achieve」の文字の画像）部分の実装 */
+}
+
+.about {
+ width: 100%;
+ height: auto;
+ margin-top: 30px;
+ margin-bottom: 30px;
+ position: relative;
+ text-align: center; 
+/* About Achieve部分の実装 */
+}
+
+.about h1{
+ font-size: 30px;
+ margin-bottom: 40px;
+}
+
+.about p{
+ color: black;
+ font-size: 13px;
+ padding-bottom: 20px;
+}
+
+/* ここから */
+.function {
+ width: 100%;
+ height: 350px;
+ display: table;
+ background-color:#eae5e3;
+ }
+
+.function h1 {
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+.function-images {
+ display: table;
+ margin: auto;
+}
+
+.function-image {
+ width: 165px;
+ display: table-cell;
+ text-align: center;
+}
+
+.function-image img {
+ width: 75px;
+ height: 85px
+}
+
+.function-image p {
+ font-size: 11px;
+}
+
+/* ここまでがfunction部分の実装 */
+
+footer {
+  position: absolute;
+  height: auto;
+  background-color: #2b2b2b;
+  width: 100%;
+  color: white;
+  font-size: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  line-height: 7px;
+}
+
+/* ここに書かれているcssの記述はあくまでヒントとして用意された雛形なので、書かれている記述に従わずに実装したいという場合は、自分の好きに実装して構わない。課題要件を満たし、コードの品質が一定の水準にあると判定されればどのような実装でも合格になる。 */
